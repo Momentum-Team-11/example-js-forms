@@ -37,13 +37,13 @@ function confirmPasswordMatch() {
   const password = document.querySelector('#password-input')
   // grab the confirm password input
   const confirmPwd = document.querySelector('#confirm-password')
-  confirmPwd.parentElement.classList.remove('is-danger') // if it's there from before
+  confirmPwd.classList.remove('is-danger') // if it's there from before
 
   // compare their values to see if they match
   if (password.value !== confirmPwd.value) {
     // show an error message on the page
     showMessage('Your passwords must match', 'danger')
-    confirmPwd.parentElement.classList.add('is-danger')
+    confirmPwd.classList.add('is-danger')
     formIsValid = false
   }
 }
