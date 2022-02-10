@@ -25,7 +25,7 @@
       <div class="header">
         <h3 class="has-text-weight-semibold">Please register</h3>
       </div>
-      <div class="alert alert-danger" id="error-msg"></div>
+      <div id="msg"></div>
       <form action="/" method="POST" id="registration-form">
         <div class="field my-3">
           <label class="label" for="name-input">Name</label>
@@ -57,7 +57,7 @@
           <label class="label" for="place-select">Where are you?</label>
           <div class="control">
             <div class="select">
-              <select id="place-select" class="select">
+              <select id="place-select" >
                 <option value="">--Please select one--</option>
                 <option value="good">The Good Place</option>
                 <option value="bad">The Bad Place</option>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class=" field my-3">
-          <button type="submit" class="button">Submit</button>
+          <button type="submit" class="button is-info">Submit</button>
         </div>
       </form>
     </main>
